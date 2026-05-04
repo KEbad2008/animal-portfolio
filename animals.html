@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 
 <html>
+    <head>
+        <style>
+            body {
+                background-color: navajowhite;
+            }
+        </style>
+    </head>
     <body>
         <h1 style="text-align: center; color: rgb(240, 16, 53)">Animal Portfolio</h1>
         <h3>On this site you will find a collection of the coolest animals in my opinion</h2>
@@ -14,7 +21,7 @@
         
         <br> 
 
-        <h2 style="color: pink;">Animal #2 - The Platypus</h2>
+        <h2 style="color: gold;">Animal #2 - The Platypus</h2>
         <p>The Platypus is an animal that has a bill that looks like that of a duck! its tail looks like a beavers tail. And its fur is like an otters. even though it is a mammal, it lays egs and has venomous stingers on its feet</p>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7gICVhaakiz8E19tdQb6xPP40-iJsK5NuPJvC3D4nSVFHJvWLiMXYCQYWdsGNhhB6xjuwaqYkJi3lnpXJPPE2dQeXf_6XlqpB4EHZHAxV&s=10">
    
@@ -42,5 +49,51 @@
         <p>a narwhal is a animal known as the unicorn of the sea. it is a whale with a giant tooth that looks like a horn. it lives in the freezing arctic waters. their long tusks help them to feel the water around them and hunt for fish!</p>
         <img src="https://magazine.washington.edu/wp-content/uploads/2018/06/Narwhal3og.jpg">
 
+        <hr>
+
+        <h1 style="text-align: center; text-anchor: middle;">Its Quiz Time!!!!</h1>
+        <p>P.S. !!!NO SCROLLING UP TO CHEAT!!!</p>
+        
+        <h2 style="text-align: center; color: brown;">Mini Quiz:</h2>
+        <p>#1. What animal can regrow their legs and arms?</p>
+        <button onclick="check(true)">Axolotl</button>
+        <button onclick="check(false)">Platypus</button>
+
+        <br>
+        <p>#2. Which animal has the strength to break glass?</p>
+        <button onclick="check(false)">Chameleon</button>
+        <button onclick="check(true)">Mantis Shrimp</button>
+
+
+        <br>
+        <p>#3. Which animal survives extreme conditions? Like heat, cold, and vacuum</p>
+        <button onclick="check(true)">Tardigrade</button>
+        <button onclick="check(false)">Narwhal</button>
+
+        <br>
+
+        <p id="score">Score: 0</p>
+
+
+        <script>
+
+            let score = 0;
+
+            function check(x){
+                if(x){
+                    score++
+                    alert("correct!")
+                
+                }else{
+                    alert("wrong!")
+                }
+                document.getElementById("score").innerHTML = "Score: " + score
+            }
+
+            
+        </script>
+        <br>
+        <p>click below to play again!</p>
+        <button onClick="window.location.reload();">click me to restart the quiz!</button>
     </body>
 </html>
