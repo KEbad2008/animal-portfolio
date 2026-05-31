@@ -30,3 +30,6 @@ The purpose of this project is to teach people about some of nature's most overl
 - search button
 
 # thank you for coming to the Animal Portfolio Centre. I hope you enjoyed/Will Enjoy!
+
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4367244a-e907-42f7-af8e-795963ba8574" />
